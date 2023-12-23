@@ -5,5 +5,7 @@ module.exports = {
     "./app/assets/stylesheets/**/*.css",
     "./app/javascript/**/*.js",
     "./app/components/**/*.{erb,html}",
+    "./node_modules/flowbite/**/*.js",
   ],
+  plugins: [require("flowbite/plugin")],
 };

@@ -1,3 +1,5 @@
+<%= link_to "Create a new post", new_post_path, class: "btn btn-primary mt-4" %>
+<%= render(AlertComponent.new(message: "#{flash[:notice]}", type: "success")) %>
 <div class="py-5">
-  <%= render(PostCardComponent.with_collection(@posts)) %>
+  <%= render(PostCardComponent.with_collection(@posts, classes: "bg-white p-3 border border-solid shadow mb-3")) %>
 </div>
