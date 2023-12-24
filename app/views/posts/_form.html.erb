@@ -1,0 +1,16 @@
+<%= form_with model: @post, url: url do |f| %>
+  <div class="mt-6">
+    <%= f.label :title, class: "form-label" %>
+    <%= f.text_field :title, class: "form-input" %>
+  </div>
+  <div class="mt-6">
+    <%= f.label :content, class: "form-label" %>
+    <%= f.text_area :content, class: "form-input" %>
+  </div>
+  <div class="flex mt-6 gap-3">
+    <%= f.button :submit, class: "btn btn-primary" do %>
+      Save
+    <% end %>
+    <%= link_to "Cancel", posts_path, class: "btn btn-secondary" %>
+  </div>
+<% end %>
