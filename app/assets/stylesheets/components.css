@@ -1,6 +1,6 @@
 @layer components{
   .btn {
-    @apply justify-center py-3 px-4 inline-flex items-center gap-x-2 font-medium rounded-lg border border-gray-200 bg-white shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none;
+    @apply justify-center py-3 px-4 inline-flex items-center gap-x-2 font-medium rounded-lg border border-gray-200 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none;
   }
 
   .btn-primary {
@@ -17,6 +17,10 @@
 
   .btn-warning {
     @apply text-yellow-500;
+  }
+
+  .btn-light {
+    @apply text-white;
   }
 
   .form-label {

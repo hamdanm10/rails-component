@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-controller="switch-theme" data-switch-theme-target="htmlTag">
   <head>
     <title>RailsComponent</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -7,8 +7,9 @@
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <script src="https://kit.fontawesome.com/0b0d7f0544.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body class="dark:bg-gray-900">
     <div class="px-36">
       <%= render 'shared/header' %>
       <%= yield %>

@@ -6,3 +6,6 @@ import { application } from "./application"
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import SwitchThemeController from "./switch_theme_controller"
+application.register("switch-theme", SwitchThemeController)

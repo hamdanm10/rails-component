@@ -1,13 +1,13 @@
-<div class="flex justify-between bg-white p-3 border border-solid shadow <%= @classes %>">
-  <div>
-    <div class="text-md font-bold">
+<div class="flex gap-3 justify-between rounded-lg p-3 border border-solid shadow <%= @classes %>">
+  <div class="truncate">
+    <div class="text-md font-bold dark:text-white">
       <%= @post.title %>
     </div>
-    <div class="truncate">
+    <div class="dark:text-white">
       <%= @post.content %>
     </div>
   </div>
-  <div>
+  <div class="whitespace-nowrap">
     <%= link_to "Edit", edit_post_path(@post), class: "btn btn-warning" %>
     <button data-modal-target="delete-post-modal-<%= @post.id %>" data-modal-toggle="delete-post-modal-<%= @post.id %>" class="btn btn-danger" type="button">
       Delete

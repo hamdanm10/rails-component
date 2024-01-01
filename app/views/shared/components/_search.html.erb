@@ -1,0 +1,6 @@
+<%= search_form_for q, url: url, html: { class: "flex gap-3" } do |f| %>
+  <%= f.text_field name_field, class: "form-input dark:bg-gray-900 dark:text-white", placeholder: "Search..." %>
+  <%= f.button :submit, class: "btn btn-primary" do %>
+    <i class="fa-solid fa-magnifying-glass"></i>
+  <% end %>
+<% end %>
